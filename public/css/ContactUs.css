@@ -1,0 +1,182 @@
+div.container-fluid {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body-container-Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0px;
+}
+
+.page-content-Contact {
+    width: 1251.46px;
+}
+
+.icon-title-Contact {
+    display: flex;
+    gap: 15px;
+}
+
+.contactInfor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin-bottom: 24px;
+}
+
+.iconMessage-Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1d2d5e;
+    background-color: #0cb8b6;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconMessage-Contact:hover {
+    color: white ;
+    background-color: #1d2d5e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+
+}
+
+.iconMessage-Contact i {
+    font-size: 20px;
+}
+
+.Message-title-Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.color-Message-title-Contact {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1d2d5e;
+}
+
+.noncolor-Message-title-Contact {
+    font-size: 18px;
+    color: #666666;
+}
+
+.Message-title-Contact p {
+    margin: 0px;
+}
+
+.form-map-container-Contact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 70px 0px;
+}
+
+.ggMap {
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    height: 568px;
+    width: 479.972px;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    right: 20px;
+    touch-action: pan-x pan-y;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+    
+
+.form-container-Contact {
+    background-color: #1d2d5e;
+    padding: 90px 150px 80px 60px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-container-Contact form {
+    height: 528.250px;
+    width: 613.097px;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #0cb8b6;
+    margin-bottom: 60px;
+}
+
+input.form-control {
+    border: 1px solid #1d2d5e;
+    font-size: 13px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    width: 100%;
+    padding-left: 20px;
+    height: 52.22px;
+}
+
+
+textarea#textInput.form-control {
+    border-radius: 20px;
+    font-size: 13px;
+    height: 150px;
+}
+button.btn.btn-info {
+    background-color: #0cb8b6;
+    border: none;
+    color: #1d2d5e;
+    font-weight: 600;
+    border-radius: 100px;
+    font-size: 13px;
+    text-align: center;
+    float: right;
+    width: 150px;
+    height: 48px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+button.btn.btn-info:hover {
+    background-color: white;
+    border: none;
+    color: #1d2d5e;
+}
+
+/* Tùy chỉnh nền popover */
+.popover {
+    background-color: red !important; /* Nền đỏ */
+    border: none; /* Bỏ viền */
+}
+
+/* Tùy chỉnh mũi tên của popover */
+.popover.bs-popover-left .popover-arrow::before,
+.popover.bs-popover-left .popover-arrow::after {
+    border-left-color: red !important; /* Mũi tên màu đỏ */
+}
+
+/* Tùy chỉnh kích thước mũi tên */
+.popover .popover-arrow {
+    width: 0.7rem; /* Tăng kích thước mũi tên */
+    height: 0.7rem;
+}
+
+/* Tùy chỉnh nội dung của popover */
+.popover .popover-body {
+    padding: 8px 12px; /* Tăng padding */
+    font-size: 14px; /* Cỡ chữ */
+    font-weight: bold; /* In đậm chữ */
+    color: white !important; /* Chữ trắng */
+    text-align: center;
+}
+
+
