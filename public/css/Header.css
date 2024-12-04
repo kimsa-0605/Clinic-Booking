@@ -1,0 +1,152 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Box */
+.header-box {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 170px;
+}
+
+/* Header Top (Emergency Call) */
+.header-head {
+    width: 100%;
+    background-color: #00bfbf; 
+    height: 43.18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    max-width: 1280px;
+}
+
+.header-head a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-head a:hover {
+    color: rgba(0, 0, 0, 0.484);
+    transition: all 0.2s ease-in-out;
+}
+
+.header-head span {
+    font-weight: bold;
+}
+
+/* Header Bottom */
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1260px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.header-left img {
+    height: 50px;
+    object-fit: cover;
+}
+
+.header-left h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #00174f; 
+    font-weight: bold;
+}
+
+.header-left h3 span {
+    color: #00bfbf; 
+}
+
+/* Header Right */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation Menu */
+.header-list_nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-list_nav a {
+    font-size: 16px;
+    color: #00174f; 
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-list_nav a:hover {
+    color: #00bfbf;
+}
+
+.header-list_nav a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #ff9800;
+    bottom: -5px;
+    left: 0;
+    transform-origin: left;
+    transition: width 0.3s ease-in-out; 
+}
+
+.header-list_nav a:hover::before {
+    width: 40%; 
+}
+
+/* Book Appointment Button */
+.header_button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1d2d5e; 
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header_button a:hover {
+    background-color: #00bfbf;
+    box-shadow: 0 0 15px 5px rgba(0, 191, 255, 0.427);
+}
+
+.header_button i {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+/* Test */
+.btn-book {
+    padding: 10px 20px;
+}
