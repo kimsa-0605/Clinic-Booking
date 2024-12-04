@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    max-width: 1280px;
+    margin-top:20px;
+    color: #00174f;
+}
+
+.container-content {
+    width: 100%;
+}
+
+.container-content-head {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.box-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border: 1px solid #1d2d5e; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.box-image img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.doctor-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.doctor-info a {
+    text-decoration: none;
+    border: 1px solid #c1c5cf;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.doctor-info a:hover {
+    transform: translateY(-20px);
+}
+
+.doctor-info img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-info div {
+    text-align: start; 
+}
+
+.doctor-info span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #1d2d5e;
+}
+
+.doctor-avb {
+    color: green;
+    font-weight: 500;
+}
+
+.doctor-name {
+    font-size: 20px;
+    color: #00174f;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.doctor-speciality {
+    font-style: italic;
+    color: #1d2d5e;
+    font-size: 14px;
+}
+
+.doctor-infor {
+    border: 1px solid #1d2d5e; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.doctor-title {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.doctor-title p {
+    margin-top: 5px;
+}
+
+.doctor-about{
+    font-size: 17px;
+    margin-top: 20px;
+    color: #00174f;
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.doctor-fees {
+   color: #00174f;
+   font-weight: 700;
+}
+
+.doctor-desc {
+    font-size: 16px;
+    margin: 10px 0px;
+    opacity: 0.7;
+}
+
+.doctor-specility {
+    color: #00174f;
+}
+
+.book-slots {
+    margin-left: 360px;
+    margin-top: 10px;
+}
+
+.btn-book {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #00bfbf;
+    color: #fff;
+}
+
+/* CSS for timevalue */
+.book-slot {
+    display: flex;
+    font-size: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: -8px;
+}
+
+.book-slot::-webkit-scrollbar{
+    display: none;
+}
+
+.book-slot_timevalue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #00174f;
+    cursor: pointer;
+}
+
+.book-slot_timevalue.active,
+.book-slots-day-item.active{
+    background-color: #00bfbf;
+    color: white; 
+}
+
+/* CSS for isBooked TimeType */
+.book-slot_isBooked {
+    background-color: #00174f;
+    color: #958d8d;
+    pointer-events: none;
+    position: relative;
+}
+/* Css for book-slots-day */
+.book-slots-day { 
+    display: flex;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+/*Css for book-slots-day-item   */
+
+.book-slots-day-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-slots-day-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    width: 60px;
+    height: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* CSS for Button */
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00bfbf;
+    min-width: 160px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    opacity: .95;
+  }
+  
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
