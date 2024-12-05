@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <base href="/PHP_CLINIC/Clinic-Booking/">
+    <base href="/Clinic-Booking/">
     <!-- Link Footer Css -->
     <link rel="stylesheet" href="public/css/DoctorDetail.css?v=1">
     <!-- Link fontawesome -->

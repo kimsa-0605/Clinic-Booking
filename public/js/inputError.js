@@ -1,5 +1,5 @@
 document.getElementById('submitButton').addEventListener('click', function () {
-    const inputs = document.querySelectorAll(' .form-control'); // Lấy tất cả input trong form
+    const inputs = document.querySelectorAll('.form-control'); // Lấy tất cả input trong form
     let formValid = true;
     inputs.forEach(input => {
         if (!input.value.trim()) {

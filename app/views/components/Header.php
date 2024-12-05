@@ -37,8 +37,8 @@
                             <a href="Doctors">
                             Doctors
                             </a>
-                            <a href="MyAcount">
-                            MyAccount
+                            <a href="Profile">
+                            My Account
                             </a>
                             <a href="ContactUs">
                             Contact Us
