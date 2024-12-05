@@ -1,7 +1,7 @@
 <?php 
 class App { 
     protected $controller = "Home"; 
-    protected $action = "SayHi";
+    protected $action = "show";
     protected $param = [];     function __construct() {
         $arr = $this->UrlProcess(); 
 

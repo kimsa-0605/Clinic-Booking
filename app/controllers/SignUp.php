@@ -6,7 +6,7 @@ class SignUp extends Controller {
         $this->UserModel = $this->model("UserModel");
     }
 
-    function SayHi() {
+    function show() {
         $this->view("SignUp", []); // Load view
     }
 

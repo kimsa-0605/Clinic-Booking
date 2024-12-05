@@ -23,7 +23,7 @@
     <div class="container-fluid">
        <?php 
             $pageName = "My account";
-            include("pages/slider.php");
+            include("app/views/components/slider.php");
         ?> 
         <div class="content-myAC">
             <div id="body-content-myAC">

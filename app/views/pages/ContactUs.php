@@ -22,7 +22,7 @@
 <body>
     <?php 
         $pageName = "Contact Us";
-        include("pages/slider.php"); 
+        include("app/views/components/slider.php"); 
       ?>
     <div class="container-fluid">
           <div class="page-cover-Contact">

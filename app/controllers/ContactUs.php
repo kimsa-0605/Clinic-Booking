@@ -2,8 +2,10 @@
 require_once __DIR__ . '/../libs/UserSendEmail.php'; 
 class ContactUs extends Controller {
 
-    function SayHi() {
-            $this->view("ContactUs",[]); // view
+    function show() {
+        $this->view('master', [
+            'Page' => 'ContactUs',
+        ]); // view
     }
 
     function sendContactUs() {
@@ -16,7 +18,8 @@ class ContactUs extends Controller {
             // Gửi email chào mừng
             $sendEmail = new UserSendEmail();
             $sendEmail->SendEmail($email, $name, $message, $subject);
-            $this->view("ContactUs",[
+            $this->view('master', [
+                'Page' => 'FAQ',
                 "success" => true,
                 "message" => "Email sent successfully",
                 "page" => "ContactUs"

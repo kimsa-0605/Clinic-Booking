@@ -5,7 +5,7 @@ class SignIn extends Controller {
         $this->UserModel = $this->model("UserModel");
     }
 
-    function SayHi() {
+    function show() {
         $this->view("SignIn",[]); // view
     }
     

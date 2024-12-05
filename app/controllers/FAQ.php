@@ -2,8 +2,10 @@
 require_once __DIR__ . '/../libs/FAQSendEmail.php'; 
 class FAQ extends Controller {
 
-    function SayHi() {
-            $this->view("FAQ",[]); // view
+    function show() {
+        $this->view('master', [
+            'Page' => 'FAQ',
+        ]);
     }
 
     function SendFAQEmail() {
@@ -15,7 +17,8 @@ class FAQ extends Controller {
             // Gửi email chào mừng
             $sendEmail = new FAQSendEmail();
             $sendEmail->SendEmail($email, $name, $message);
-            $this->view("FAQ",[
+            $this->view('master', [
+                'Page' => 'FAQ',
                 "success" => true,
                 "message" => "Email sent successfully",
                 "page" => "FAQ"

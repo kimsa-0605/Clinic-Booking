@@ -22,7 +22,7 @@
     <div class="container-fluid">
       <?php 
         $pageName = "Frequently Asked Questions";
-        include("pages/slider.php"); 
+        include("app/views/components/slider.php"); 
       ?>
         <div class="page-cover-FAQ">
             <div class="body-container">

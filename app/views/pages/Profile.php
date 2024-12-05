@@ -23,13 +23,13 @@
     <div class="container-fluid">
         <?php 
             $pageName = "My Account";
-            include("pages/slider.php"); 
+            include("app/views/components/slider.php"); 
         ?>
         <div class="content-profile">
             <div class="body-content-profile">
                 <div class="sidebar">
                 <?php 
-                    include("pages/Sidebar.php"); 
+                    include("app/views/components/Sidebar.php"); 
                 ?> 
                 </div>
                 <div class="content-body-profile">

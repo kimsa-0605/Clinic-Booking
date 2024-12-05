@@ -8,10 +8,12 @@ class Profile extends Controller {
         $this->UserModel = $this->model("UserModel");
     }
 
-    function SayHi() {
+    function show() {
         $isLogIn = MiddleWare::isSignedIn();
         if (!$isLogIn) {
-            $this->view("MyAccount",[]); // view
+            $this->view('master', [
+                'Page' => 'MyAccount',
+            ]); 
         }
         else {
             $this->Overview();
@@ -48,11 +50,13 @@ class Profile extends Controller {
         while ($appointment = $appointmentsResult->fetch_assoc()) {
                 $recentAppointments[] = $appointment;
             }
-        $this->view("Profile",[
-            "userInfor" => $userInfor,
-            "upComingSchedule" =>  $upComingScheduleResult,
-            'recentAppointments' => $recentAppointments,
-            'avatarImage' => $image,
+        
+        $this->view('master', [
+                'Page' => 'Profile',
+                "userInfor" => $userInfor,
+                "upComingSchedule" =>  $upComingScheduleResult,
+                'recentAppointments' => $recentAppointments,
+                'avatarImage' => $image,
         ]);
     }
 
@@ -65,7 +69,8 @@ class Profile extends Controller {
             $appointments[] = $appointment;
         }
         // Truyền dữ liệu vào view
-        $this->view("BookedAppointments", [
+        $this->view('master', [
+            'Page' => 'BookedAppointments',
             'appointments' => $appointments,
         ]);
     }
@@ -80,7 +85,8 @@ class Profile extends Controller {
             }
         }
         // Truyền dữ liệu vào view
-        $this->view("MedicalHistory", [
+        $this->view('master', [
+            'Page' => 'MedicalHistory',
             'appointments' => $appointments,
         ]);
     }
@@ -103,6 +109,7 @@ class Profile extends Controller {
             if ($this->UserModel->UpdateUserInfor($fullName, $gender, $birth, $address, $userID)) {
                 $success = true;
                 $message = "Update Successful!";
+                header("Refresh:0");
             } else {
                 $success = false;
                 $message = "Update failed. Please try again!";
@@ -146,12 +153,13 @@ class Profile extends Controller {
                 $image = "public/images/uploads/" . $userInfor['Image'];
             }
 
-        $this->view("UpdateProfile", [
-            'userInforResult' => $userInfor,
-            'success' => $success,
-            'message' => $message,
-            'POST' => $POST,
-            'avatarImage' => $image,
-        ]);
+        $this->view('master', [
+                'Page' => 'UpdateProfile',
+                'userInforResult' => $userInfor,
+                'success' => $success,
+                'message' => $message,
+                'POST' => $POST,
+                'avatarImage' => $image,
+            ]);
     }
 }

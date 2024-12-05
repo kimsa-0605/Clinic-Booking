@@ -14,12 +14,12 @@
     <div class="container-fluid">
         <?php 
             $pageName = "My Account";
-            include("pages/slider.php"); 
+            include("app/views/components/slider.php"); 
         ?> 
         <div class="content-MH">
             <div class="body-content-MH">
                 <div class="sideMHr">
-                    <?php include("pages/Sidebar.php"); ?>
+                    <?php include("app/views/components/Sidebar.php"); ?>
                 </div>
                 <div class="content-body-MH">
                     <!-- <div class="search-doctor-MH"></div> -->
