@@ -1,0 +1,106 @@
+
+.content-profile {
+    padding: 60px;
+}
+
+.body-content-profile {
+    display: flex;
+    gap: 30px;
+}
+
+.content-body-profile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 1100px;
+}
+
+.UA-PI-profile {
+    display: flex;
+    gap: 20px;
+}
+.UA-profile {
+    width: 100%;
+    background-image: linear-gradient(to right, #1d2d5e, #0cb8b6);
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.UA-date, .UA-time {
+    font-size: 20px;
+}
+
+.UA-title {
+    font-size: 20px;
+}
+
+.profile-infor {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color:#1d2d5e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.PI-image {
+    background-color: #1d2d5e;
+    border-radius: 10px;
+}
+.PI-image img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.PI-content span, .PI-content i {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name-icon-profile {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px ;
+}
+
+.gender-profile, .birth-profile, .address-profile {
+    display: flex;
+    align-items: center;
+}
+
+.RA-profile {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color:#1d2d5e;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.RA-title {
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+.RA-schedule {
+    color: black;
+    font-weight: 400;
+}
+
+.nondata {
+    display: flex !important;
+    gap: 10px !important;
+    text-align: center !important;
+    align-items: center;
+}
+

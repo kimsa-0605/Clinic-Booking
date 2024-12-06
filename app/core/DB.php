@@ -1,31 +1,31 @@
 <?php
 
-class DB
-{
-    private $conn;
-    private $servername = "localhost";
-    private $username = "root";
-    private $password = "1234"; // Thay đổi mật khẩu nếu cần
-    private $dbname = "clicnic"; // Chú ý chính tả nếu cần
+
+    class DB {
+        public $con;
+        protected $servername = "localhost";
+        protected $username = "root";
+        protected $password = "1234";
+        protected $dbname = "clinicbook";
 
     public function __construct()
     {
         // Kết nối đến cơ sở dữ liệu
-        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        $this->con = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
 
         // Kiểm tra kết nối
-        if ($this->conn->connect_error) {
-            die("Kết nối thất bại: " . $this->conn->connect_error);
+        if ($this->con->connect_error) {
+            die("Kết nối thất bại: " . $this->con->connect_error);
         }
 
         // Thiết lập charset
-        $this->conn->set_charset("utf8");
+        $this->con->set_charset("utf8");
     }
 
     // Phương thức để thực hiện truy vấn
     public function query($query)
     {
-        return $this->conn->query($query);
+        return $this->con->query($query);
     }
 
     // Phương thức để lấy dữ liệu
@@ -37,12 +37,12 @@ class DB
     // Phương thức để chuẩn bị truy vấn
     public function prepare($query)
     {
-        return $this->conn->prepare($query);
+        return $this->con->prepare($query);
     }
 
     // Phương thức để đóng kết nối
     public function close()
     {
-        $this->conn->close();
+        $this->con->close();
     }
 }

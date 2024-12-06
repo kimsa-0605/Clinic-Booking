@@ -1,0 +1,392 @@
+* {
+    font-family: 'Arial', 'Verdana', sans-serif;
+}
+
+div.container-fluid {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-title-FAQ{
+    position: relative;
+    background-color: #D1DADA;
+    height: 285px;
+}
+
+.elementor-page-title-FAQ {
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    padding-top: 100px;
+}
+
+.page-title-FAQ img {
+    position: absolute;
+    height: 345px;
+    right: 20px;
+    top: -30px;
+}
+.row-clr {
+    margin-left: 64px;
+}
+
+.title-pt-FAQ {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px 0px 90px 10px;
+    color: #1d2d5e;
+}
+
+.nav-back-FAQ {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    margin: 20px 10px 0px;
+    padding: 12px 30px 10px;
+    background-color: white;
+    font-size: 14px;
+    color: rgba(29, 45, 94, 0.5);
+    border-radius: 5px 5px 0 0;
+}
+
+.nav-back-FAQ span, .nav-back-FAQ .fa-house {
+    cursor: pointer;
+}
+
+.page-cover-FAQ {
+    display: flex;
+    margin: 0px 130px 0px 120px;
+}
+
+.body-container {
+    width: 100%;
+}
+
+.page-content-FAQ {
+    width: 1142px;
+    display: flex;
+    margin: 80px 0px 0px;
+}
+
+
+.elemontor-container-FAQ {
+    width: 1119px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    grid-template-columns: 387px 802px;
+}
+
+.left-content-FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-template-rows: 50% 50%;
+    padding: 20px;
+}
+
+.doctor-lc-image-FAQ {
+    width: 344px;
+    height: 513.15px;
+}
+
+.doctor-lc-image-FAQ img{
+    width: 344px;
+    height: 513.15px;
+}
+
+
+.right-content-FAQ {
+    display: grid;
+    grid-template-rows: 250px 75%;
+    padding: 10px 10px 10px 40px;
+}
+
+.title-rc-FAQ {
+    font-size: 36px;
+    font-weight: bold;
+    color:#1d2d5e;
+    margin-bottom: 20px;
+}
+
+.title-rc-FAQ span, .FAQ-title-rc .color-FAQ-title {
+    color: #0cb8b6;
+}
+
+.script-rc-FAQ {
+    font-size: 18px;
+    color: rgba(29, 45, 94, 0.5);
+} 
+
+.noncolor-FAQ-title {
+    font-size: 16px;
+    color: rgba(29, 45, 94, 0.5);
+}
+
+.color-FAQ-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.iconFAQ-title-rc-FAQ {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+
+.iconFAQ-title-rc-FAQ .iconQuestion, .iconFAQ-title-rc-FAQ .iconMessage {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d2d5e;
+    padding: 10px;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 0;
+    border-radius: 100px;
+
+}
+
+.iconFAQ-title-rc-FAQ .iconMessage {
+    background-color:  #0cb8b6;
+}
+
+.iconFAQ-title-rc-FAQ .color-Message-title {
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.iconFAQ-title-rc-FAQ .noncolor-Message-title {
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px;
+    margin: 0px;
+}
+.fa-question, .fa-message {
+    font-size: 24px;
+    color: #0cb8b6;
+    background-size: cover;
+}
+
+.fa-message {
+    color: #1d2d5e;
+    font-size: 20px;
+}
+
+.FAQ-title-rc .color-FAQ-title, .FAQ-title-rc .noncolor-FAQ-title {
+    margin: 0px;
+}
+
+.form-lc-container-FAQ {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 386.99px;
+    background-color: #1d2d5e;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+.form-control {
+    border: 1px solid #1d2d5e;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+#nameInput, #emailInput{
+    border-radius: 100px;
+    font-size: 13px;
+}
+
+#textInput {
+    border-radius: 22px;
+    height: 175px;
+    padding: 15px 15px 15px 15px;
+    font-size: 13px;
+}
+
+textarea.form-control {
+    min-height: 175px;
+    height: 175px;
+    font-size: 13px;
+}
+
+.btn.btn-info {
+    background-color: #0cb8b6;
+    border: none;
+    color: #1d2d5e;
+    font-weight: 600;
+    border-radius: 100px;
+    font-size: 13px;
+    text-align: center;
+    width: 150px; 
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.btn.btn-info:focus {
+    border: none;
+    background-color: white;
+}
+
+div.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 100px;
+}
+
+
+
+div.card-header .btn[aria-expanded="true"] {
+    display: flex;             
+    align-items: center;      
+    justify-content: space-between; 
+    width: 806px; 
+    height: 60.23px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #1d2d5e;
+    text-align: left;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.card-header .btn[aria-expanded="true"] i {
+    font-size: 16px;
+}
+
+div.card-header .btn[aria-expanded="false"] {
+    display: flex;             
+    align-items: center;      
+    justify-content: space-between; 
+    width: 806px;
+    height: 60.23px;
+    text-align: left;
+    font-size: 16px;
+    color: #1d2d5ec5;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-color: rgba(29, 45, 94, .12);
+    border-radius: 99px;
+}
+
+.btn.btn-link.collapsed {
+    padding: 0px 20px;
+    margin: 0px;
+    border-radius: 100px;
+}
+
+.question-answer-rc-FAQ  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#accordion .btn-link {
+    text-decoration: none;
+}
+
+#accordion .btn-link:hover, 
+#accordion .btn-link:focus {
+    text-decoration: none;
+}
+
+
+div.card-header {
+    border-bottom: none;
+    padding: 0px;
+    background-color: white;
+    border-radius: 100px;  
+}
+
+
+div.card-body {      
+    color: #333;                
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out;
+    width: 806px;
+}
+
+div.collapse {
+    transition: height 0.3s ease;
+}
+
+
+
+.btn-link:hover, .btn-link:focus {
+    text-decoration: none;
+}
+
+/* Xử lý mũi tên mặc định */
+div.card-header .btn i {
+    transition: transform 0.3s; 
+    float: right;     
+}
+
+/* Khi aria-expanded=true (mở) */
+.card-header .btn[aria-expanded="true"] i {
+    transform: rotate(90deg); 
+}
+
+/* Khi aria-expanded=false (đóng) */
+.card-header .btn[aria-expanded="false"] i {
+    transform: rotate(0);
+}
+
+/* Tùy chỉnh nền popover */
+.popover {
+    background-color: red !important; /* Nền đỏ */
+    border: none; /* Bỏ viền */
+}
+
+.input-error {
+    border: 2px solid red; /* Viền đỏ */
+    background-color: #ffe6e6; /* Nền nhạt đỏ */
+}
+
+/* Tùy chỉnh mũi tên của popover */
+.popover.bs-popover-start .popover-body::before,
+.popover.bs-popover-start .popover-body::after {
+    border-left-color: red !important;
+}
+
+/* Tùy chỉnh kích thước mũi tên */
+.popover .popover-arrow {
+    width: 0.7rem; /* Tăng kích thước mũi tên */
+    height: 0.7rem;
+}
+
+/* Tùy chỉnh nội dung của popover */
+.popover .popover-body {
+    padding: 8px 12px; /* Tăng padding */
+    font-size: 14px; /* Cỡ chữ */
+    font-weight: bold; /* In đậm chữ */
+    color: white !important; /* Chữ trắng */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
