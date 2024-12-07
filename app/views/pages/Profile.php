@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<base href="/Clinic-Booking/">
+    <base href="/Clinic-Booking/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -19,60 +20,61 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container-fluid">
-        <?php 
-            $pageName = "My Account";
-            include("app/views/components/slider.php"); 
+        <?php
+        $pageName = "My Account";
+        include("app/views/components/slider.php");
         ?>
         <div class="content-profile">
             <div class="body-content-profile">
                 <div class="sidebar">
-                <?php 
-                    include("app/views/components/Sidebar.php"); 
-                ?> 
+                    <?php
+                    include("app/views/components/Sidebar.php");
+                    ?>
                 </div>
                 <div class="content-body-profile">
                     <div class="UA-PI-profile">
-                    <div class="UA-profile">
-                        <div class="UA-content">
-                            <p class="UA-title">Upcoming appointments</p>
-                            <div class="UA-schedule">
-                                <p class="UA-date"><?php echo $data["upComingSchedule"]["ScheduleDate"]?></p>
-                                <p class="UA-time"><?php echo $data["upComingSchedule"]["TimeType"]?></p>
-                                <p class="UA-doctorName"><?php echo $data["upComingSchedule"]["DoctorName"]?></p>
-                                <p class="UA-specilist"><?php echo $data["upComingSchedule"]["Specilist"]?></p>
+                        <div class="UA-profile">
+                            <div class="UA-content">
+                                <p class="UA-title">Upcoming appointments</p>
+                                <div class="UA-schedule">
+                                    <p class="UA-date"><?php echo $data["upComingSchedule"]["ScheduleDate"] ?></p>
+                                    <p class="UA-time"><?php echo $data["upComingSchedule"]["TimeType"] ?></p>
+                                    <p class="UA-doctorName"><?php echo $data["upComingSchedule"]["DoctorName"] ?></p>
+                                    <p class="UA-specilist"><?php echo $data["upComingSchedule"]["Specilist"] ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile-infor">
-                        <div class="PI-content">
-                            <div class="PI-image">
-                                <img src="<?php echo $data["avatarImage"]?>" alt="">
-                            </div>
-                            <div class="name-icon-profile">
-                                <span class="name-PI-content"><?php echo $data['userInfor']["FullName"]?></span>
-                            </div>
-                            <div class="gender-profile">
-                                <i class="fa-solid fa-transgender"></i> <span class="gender-PI-content">Gender: <?php echo $data["userInfor"]["Gender"]?></span>
-                            </div>
-                            <div class="birth-profile">
-                                <i class="fa-regular fa-calendar"></i> <span class="birth-date-PI-content">Birth: <?php echo $data["userInfor"]["DOB"]?></span>
-                            </div>
-                            <div class="address-profile">
-                                <i class="fa-solid fa-location-dot"></i> <span class="phoneN-PI-content">Address: <?php echo $data["userInfor"]["Address"]?></span>
+                        <div class="profile-infor">
+                            <div class="PI-content">
+                                <div class="PI-image">
+                                    <img src="<?php echo $data["avatarImage"] ?>" alt="">
+                                </div>
+                                <div class="name-icon-profile">
+                                    <span class="name-PI-content"><?php echo $data['userInfor']["FullName"] ?></span>
+                                </div>
+                                <div class="gender-profile">
+                                    <i class="fa-solid fa-transgender"></i> <span class="gender-PI-content">Gender: <?php echo $data["userInfor"]["Gender"] ?></span>
+                                </div>
+                                <div class="birth-profile">
+                                    <i class="fa-regular fa-calendar"></i> <span class="birth-date-PI-content">Birth: <?php echo $data["userInfor"]["DOB"] ?></span>
+                                </div>
+                                <div class="address-profile">
+                                    <i class="fa-solid fa-location-dot"></i> <span class="phoneN-PI-content">Address: <?php echo $data["userInfor"]["Address"] ?></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="RA-profile">
                         <div class="RA-content">
                             <p class="RA-title">Recent appointments</p>
                             <div class="RA-schedule">
                                 <?php
-                                    // Kiểm tra dữ liệu trong mảng
-                                    if (!empty($data['recentAppointments'])) {
-                                        echo '<table class="tbl-MH table">
+                                // Kiểm tra dữ liệu trong mảng
+                                if (!empty($data['recentAppointments'])) {
+                                    echo '<table class="tbl-MH table">
                                                 <thead>
                                                 <tr>
                                                     <th style="padding-left: 10px;">No.</th>
@@ -86,9 +88,9 @@
                                                 </thead>
                                                 <tbody>';
 
-                                        $counter = 1; // Khởi tạo số thứ tự
-                                        foreach ($data['recentAppointments'] as $row) {
-                                            echo '<tr>
+                                    $counter = 1; // Khởi tạo số thứ tự
+                                    foreach ($data['recentAppointments'] as $row) {
+                                        echo '<tr>
                                                     <td style="padding-left: 10px;">' . $counter++ . '</td>
                                                     <td>' . htmlspecialchars($row["DoctorName"]) . '</td>
                                                     <td>' . htmlspecialchars($row["Specilist"]) . '</td>
@@ -97,12 +99,12 @@
                                                     <td>' . htmlspecialchars($row["AppointmentStatus"]) . '</td>
                                                     <td>' . htmlspecialchars($row["Description"]) . '</td>
                                                 </tr>';
-                                        }
-
-                                        echo '</tbody></table>';
-                                    } else {
-                                        echo "<div class='nondata'>"."<i class='fa-regular fa-face-frown-open'></i>"."No data available!"."</div>";
                                     }
+
+                                    echo '</tbody></table>';
+                                } else {
+                                    echo "<div class='nondata'>" . "<i class='fa-regular fa-face-frown-open'></i>" . "No data available!" . "</div>";
+                                }
                                 ?>
                             </div>
                         </div>
@@ -111,6 +113,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>

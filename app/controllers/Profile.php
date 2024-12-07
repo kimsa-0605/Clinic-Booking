@@ -1,4 +1,6 @@
 <?php
+
+
 require_once 'app/controllers/MiddleWare.php';
 class Profile extends Controller {
     public $AppointmentBookingModel;

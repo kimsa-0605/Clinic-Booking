@@ -1,8 +1,10 @@
 <?php 
 class App { 
+
     protected $controller = "Home"; 
     protected $action = "show";
-    protected $param = [];     function __construct() {
+    protected $param = [];     
+    function __construct() {
         $arr = $this->UrlProcess(); 
 
         // Xử lý controllers
@@ -25,7 +27,6 @@ class App {
         // Xử lý param 
         $this->param = $arr?array_values($arr):[];
         call_user_func_array([$this->controller, $this->action], $this->param);
-
 
     }
 
