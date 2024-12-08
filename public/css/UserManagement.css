@@ -1,0 +1,93 @@
+.content-admin {
+    padding: 60px;
+}
+
+.body-content-admin {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.table-display-admin {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.tbl-content-admin {
+    min-width: 1050px;
+    min-height: 244px !important;
+    height: 244px;
+    width: 100%;
+}
+
+.tbl-admin th {
+    color: #1d2d5e;
+}
+
+.tbl-admin td {
+    color: rgba(0, 0, 0, 0.627);
+}
+
+.nondata {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.nondata i {
+    font-size: 30px;
+}
+
+.user-pagination .page-item.active .page-link {
+    background-color: #1d2d5e; /* Màu nền khi nút được chọn */
+    color: white;             /* Màu chữ */
+    border-color: #1d2d5e;    /* Màu viền */
+}
+
+.user-pagination .page-link {
+    color: #1d2d5e;           /* Màu chữ cho các nút thông thường */
+}
+
+.user-pagination .page-link:hover {
+    background-color: #f0f0f0; /* Màu nền khi di chuột */
+    color: #1d2d5e;           /* Màu chữ khi di chuột */
+}
+
+.tbl-title-admin {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2d5e;   
+}
+
+.tbl-title-admin span {
+    color: #0cb8b6;   
+}
+
+.user-pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.user-pagination a {
+    padding: 8px 16px;
+    margin: 0 4px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #1d2d5e;
+}
+
+.user-pagination a:hover {
+    background-color: #ddd;
+}
+
+.user-pagination a.active {
+    background-color: #1d2d5e;
+    color: white;
+    border: 1px solid #1d2d5e;
+}
+
+
