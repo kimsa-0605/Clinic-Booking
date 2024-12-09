@@ -62,17 +62,13 @@
         
                     <div class="form-map-container-Contact">
                         <div class="form-container-Contact">
-                            <form action="./ContactUs/sendContactUs" method="post" onsubmit="return validateForm()">
+                            <form action="./ContactUs/sendContactUs" method="post" onsubmit="return validateForm()" target="_blank">
                                 <div class="iconContact-title-Contact">
                                     <h2 class="form-title" >Get in <span style="color: white;">touch</span> with us</h2>
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
                                       <input type="text" class="form-control" name="name" placeholder="Your Name (*)" required
-                                      data-toggle="popover"   data-content="x">
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" class="form-control" name="email" placeholder="Your Email (*)" required
                                       data-toggle="popover"   data-content="x">
                                     </div>
                                   </div>

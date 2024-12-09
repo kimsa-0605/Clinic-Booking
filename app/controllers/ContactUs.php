@@ -11,13 +11,12 @@ class ContactUs extends Controller {
     function sendContactUs() {
         if (isset($_POST["sendMessage"])) {
             $name =$_POST["name"];
-            $email =$_POST["email"];
             $subject =$_POST["subject"];
             $message =$_POST["message"];
 
             // Gửi email chào mừng
             $sendEmail = new UserSendEmail();
-            $sendEmail->SendEmail($email, $name, $message, $subject);
+            $sendEmail->SendEmail( $name, $message, $subject);
             $this->view('master', [
                 'Page' => 'FAQ',
                 "success" => true,

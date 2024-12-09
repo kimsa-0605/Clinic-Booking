@@ -26,7 +26,7 @@
             </div>
             <div class="row-clr">
                 <div class="nav-back-FAQ">
-                    <i class="fa-solid fa-house"></i> <i class="fa-solid fa-angles-right"></i> 
+                    <a href="./Home/show"><i class="fa-solid fa-house"></i></a> <i class="fa-solid fa-angles-right"></i> 
                     <?php 
                         echo "<span>$pageName</span>";
                     ?>

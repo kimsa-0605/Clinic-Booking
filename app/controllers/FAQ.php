@@ -11,12 +11,11 @@ class FAQ extends Controller {
     function SendFAQEmail() {
         if (isset($_POST["sendMessage"])) {
             $name =$_POST["name"];
-            $email =$_POST["email"];
             $message =$_POST["message"];
 
             // Gửi email chào mừng
             $sendEmail = new FAQSendEmail();
-            $sendEmail->SendEmail($email, $name, $message);
+            $sendEmail->SendEmail( $name, $message);
             $this->view('master', [
                 'Page' => 'FAQ',
                 "success" => true,

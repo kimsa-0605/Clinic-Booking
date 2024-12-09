@@ -5,9 +5,11 @@
             $model = $this->model('DoctorModel');
             // $doctorList = $model->GetDoctor();
             $model->createAppointment();
+            $model = $this->model('DoctorModel');
+            $doctorList = $model->getAllDoctor();
             $this->view('master', [
-                'Page' => 'Home'
-                // 'DoctorList' => $doctorList
+                'Page' => 'Home',
+                'DoctorList' => $doctorList
             ]);
         }
     }
