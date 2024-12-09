@@ -176,36 +176,5 @@
 
             return $days;
         }
-
-        public function getDoctorInforforAdmin() {
-            $sql = "SELECT 
-                    u.*, 
-                    d.*, 
-                    sp.SPName AS Specialty 
-                FROM 
-                    doctor d
-                JOIN 
-                    user u ON d.UserID = u.UserID
-                JOIN 
-                    specilist sp ON d.SPID = sp.SPID
-                WHERE 
-                    u.RoleID = 2
-                ORDER BY 
-                    u.FullName ASC";
-            return mysqli_query($this->con, $sql);
-        }
-
-        public function getAllSpecialtiesAdmin() {
-            $sql = "SELECT SPID, SPName FROM specilist";
-
-            return mysqli_query($this->con, $sql);
-        }
-
-        public function insertDoctor($specialtyID, $fees, $userID) {
-            $sql = "INSERT INTO doctor 
-            VALUES (Null, $fees, Null, 1,Null, $userID,$specialtyID)";
-            return mysqli_query($this->con, $sql);
-
-        }
-    } 
+    }
 ?>
