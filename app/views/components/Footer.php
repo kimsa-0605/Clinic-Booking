@@ -5,7 +5,7 @@
     <base href="/PHP_CLINIC/Clinic-Booking/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Footer Css -->
-    <link rel="stylesheet" href="public/css/Footer.css">
+    <link rel="stylesheet" href="/PHP_CLINIC/Clinic-Booking/public/css/Footer.css">
     <!-- Link fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Footer</title>

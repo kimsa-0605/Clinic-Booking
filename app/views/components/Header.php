@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="/PHP_CLINIC/Clinic-Booking/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Header Css -->
+    <base href="/PHP_CLINIC/Clinic-Booking/">
     <link rel="stylesheet" href="public/css/Header.css">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +17,7 @@
             </div>
             <div class="header-bottom">
                 <div class="header-left">
-                    <img src="public/images/logoRemove.png" alt="">
+                    <img src="/PHP_CLINIC/Clinic-Booking/public/images/logoRemove.png" alt="">
                 </div>
                 <div class="header-right">
                     <div class="header-list">
