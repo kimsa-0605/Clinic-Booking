@@ -56,7 +56,11 @@ function selectSlot(selectedP) {
     }
 }
 
-function bookAppointment() {
+function bookAppointment(id) {
+    if (id === '') {
+        alert('Please login before booking');
+        return;
+    }
     if (!datenew || !slot) {
         alert('Please select day/slot');
         return;

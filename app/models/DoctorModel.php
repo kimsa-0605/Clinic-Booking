@@ -1,4 +1,7 @@
 <?php
+
+use Stripe\Billing\Alert;
+
     class DoctorModel extends DB {
 
         // Lấy danh sách bác sĩ
@@ -228,7 +231,7 @@
             $doctorID = $_SESSION['appointmentData']['doctorId'];
             $des = $_SESSION['appointmentData']['description'];
             // Lấy từ SESSION
-            $userID = $_SESSION['userID'] ?? 31;
+            $userID = $_SESSION['id-user'] ?? 31;
             
             // Format thời gian
             $formattedTime = DateTime::createFromFormat('g:i A', $time)->format('h:i A');        

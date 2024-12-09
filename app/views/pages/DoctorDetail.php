@@ -70,7 +70,10 @@
                 </div>
                 <!-- booking button -->
                 <div>
-                    <button class="btn" id="book" onclick="bookAppointment()">Book an appointment</button>
+                    <?php
+                        $id = $_SESSION['id-user'] ?? '';
+                    ?>
+                    <button class="btn" id="book" onclick="bookAppointment('<?php echo $id; ?>')">Book an appointment</button>
                 </div>
             </div>
             <!-- Related doctor -->

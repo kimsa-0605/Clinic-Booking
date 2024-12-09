@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
+    <base href="/Clinic-Booking/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../public/css/DoctorDashboard.css"> <!-- Đường dẫn đến CSS -->
+    <link rel="stylesheet" href="public/css/DoctorDashboard.css"> <!-- Đường dẫn đến CSS -->
 </head>
 
 <body>
-
 
     <div class="content">
         <div class="header">
@@ -20,7 +20,7 @@
                     <i class="fa-solid fa-bell icon-notice"></i>
                     <div class="number-notice">2</div>
                 </div>
-                <img src="../public/images/doctors/Andy.jpg" alt=""> <!-- Đường dẫn đến hình ảnh -->
+                <img src="public/images/doctors/Andy.jpg" alt=""> <!-- Đường dẫn đến hình ảnh -->
                 <p><?php echo htmlspecialchars($data['Doctor']['FullName']); ?></p>
             </div>
         </div>
@@ -33,14 +33,14 @@
                 </div>
                 <div class="infor-detail-doctor">
                     <div class="infor-doctor">
-                        <img src="../public/images/doctors/Andy.jpg" alt=""> <!-- Đường dẫn đến hình ảnh -->
+                        <img src="public/images/doctors/Andy.jpg" alt=""> <!-- Đường dẫn đến hình ảnh -->
                         <div class="infor-detail">
                             <div class="name-doctor"><?= htmlspecialchars($data['Doctor']['FullName']); ?></div>
                             <div class="email"><?= htmlspecialchars($data['Doctor']['Email']); ?></div>
                         </div>
                     </div>
                     <button class="action-edit-profile">
-                        <a href="../app/views/pages/EditProfiles.php">Edit Profile <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="app/views/pages/EditProfiles.php">Edit Profile <i class="fa-solid fa-arrow-right"></i></a>
                     </button>
                 </div>
             </div>

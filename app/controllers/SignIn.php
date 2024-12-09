@@ -1,5 +1,5 @@
 <?php
-require_once './app/controllers/ProfileDoctor.php'; // Đảm bảo đường dẫn chính xác
+require_once './app/controllers/DoctorLayout.php'; // Đảm bảo đường dẫn chính xác
 
 class SignIn extends Controller
 {
@@ -42,8 +42,8 @@ class SignIn extends Controller
                             break;
 
                         case 2: // RoleID: Doctor
-                            $profileController = new ProfileDoctor();
-                            $profileController->show(); // Chuyển hướng đến trang ProfileDoctor
+                            $doctorLayout = new DoctorLayout();
+                            $doctorLayout->show(); // Gọi phương thức show để hiển thị trang bác sĩ
                             break;
 
                         default: // RoleID: Admin hoặc các vai trò khác

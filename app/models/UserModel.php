@@ -46,23 +46,5 @@
             return mysqli_query($this->con, $sql);
         }
 
-        public function getUserInforforAdmin() {
-            $sql = "SELECT 
-                    *, 
-                    CASE 
-                        WHEN RoleID = 1 THEN 'Admin'
-                        WHEN RoleID = 2 THEN 'Doctor'
-                        WHEN RoleID = 3 THEN 'Patient'
-                        ELSE 'Không xác định'
-                    END AS Role
-                FROM user";
-            return mysqli_query($this->con, $sql);
-        }
-
-        public function InsertNewDoctor($fullName, $email, $password, $birth, $gender, $phoneNumber, $address) {
-            $sql = "INSERT INTO user VALUES (NULL, '$fullName', '$email', '$password', NULL, '$birth', '$gender', '$phoneNumber', '$address', '2')";
-            $result = mysqli_query($this->con, $sql);
-        }
-
     }
 ?>
