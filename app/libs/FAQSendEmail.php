@@ -9,28 +9,16 @@
 
     class FAQSendEmail {
         function __construct() {}
+        function SendEmail( $name, $message) {
+            $subject_encoded = urlencode("FAQ FROM USER - NAME: $name");
+            $message_encoded = urlencode($message);
 
-        function SendEmail($email, $name, $message) {
-        
-            require "vendor/autoload.php";
-            $mail = new PHPMailer();
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP host
-            $mail->Port = 587; // Replace with your SMTP port
-            $mail->SMTPAuth = true;
-            $mail->Username = "holykimsa05@gmail.com";
-            $mail->Password = "ocfo jdqr ujsu wzqs";
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            // Tạo URL cho Gmail
+            $url = "https://mail.google.com/mail/u/0/?fs=1&to=holykimsa05@gmail.com&su=$subject_encoded&body=$message_encoded&tf=cm";
 
-            $mail->CharSet = 'UTF-8';
-            $mail->setFrom("holykimsa05@gmail.com", "ClinicExtra");
-            $mail->addAddress("holykimsa05@gmail.com", "ClinicExtra");
-            $mail->addReplyTo($email, $name);
-
-            $mail->Subject = "FAQ FROM USER";
-            $mail->Body = $message;
-
-            $mail->send();
-        }        
+            // Chuyển hướng người dùng đến URL
+            header("Location: $url");
+            exit(); 
+        }               
     }
 ?>

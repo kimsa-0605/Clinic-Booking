@@ -42,15 +42,11 @@
                                         <p class="noncolor-Message-title">Quick contact form</p>
                                     </div>
                                 </div>
-                                <form action="./FAQ/SendFAQEmail" method="post" onsubmit="return validateForm()">
+                                <form action="./FAQ/SendFAQEmail" method="post" onsubmit="return validateForm()" target="_blank">
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="name" id="nameInput" placeholder="Your Name (*)" required 
                                           data-toggle="popover"   data-content="x">
                                     </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="emailInput" placeholder="Your Email (*)"  required 
-                                          data-toggle="popover"   data-content="x">
-                                        </div>
                                     <div class="form-group">
                                         <textarea class="form-control" id="textInput" name="message" rows="3" placeholder="Your Message..."  required 
                                           data-toggle="popover"   data-content="x"></textarea>

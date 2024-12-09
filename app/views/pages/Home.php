@@ -23,7 +23,9 @@
                         <div class="banner-description">A full spectrum multi-specialty medical
                             office covering Cardiology, Neurology Child and Adult Psychiatry.</div>
                     </div>
-                    <button class="btn-learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    <a href="AboutUs/show">
+                        <button class="btn-learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
                     <div class="widget-container">
                         <div class="widget-wrap">
                             <div class="counter">15+</div>
@@ -109,8 +111,12 @@
                         </div>
                     </div>
                     <div class="btn-action">
-                        <button class="btn-action-book">Book an Appointment</button>
-                        <button class="btn-action-more">More our services</button>
+                        <a href="Doctors/show">
+                            <button class="btn-action-book">Book an Appointment</button>
+                        </a>
+                        <a href="Service/show">
+                            <button class="btn-action-more">More our services</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -218,61 +224,30 @@
                 </div>
             </div>
             <div class="cards-doctors">
-                <div class="card-item">
-                    <div class="info-of-card">
-                        <img src="public/images/doctors/Folk.jpg" alt="Doctor Folk">
-                        <div class="name">Elizabeth Folk</div>
-                        <div class="describe">Elizabeth Folk, M.D is a highly <br> compassionate physician.</div>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com" style="color: #0cb8b6;">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com" style="color: #0cb8b6;">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com" style="color: #0cb8b6;">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="info-of-card">
-                        <img src="public/images/doctors/Lowe.jpg" alt="Doctor Folk">
-                        <div class="name">Richard Lowe</div>
-                        <div class="describe">Dr. Lowe had demonstrated an <br> aptitude for providing complete.</div>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com" style="color: #0cb8b6;">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.linkedin.com" style="color: #0cb8b6;">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://twitter.com" style="color: #0cb8b6;">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="info-of-card">
-                        <img src="public/images/doctors/Loftin.jpg" alt="Doctor Folk">
-                        <div class="name">Michele Loftin</div>
-                        <div class="describe">Dr. Loftin is a competent, energetic <br> and highly dedicated physician.</div>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com" style="color: #0cb8b6;">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com" style="color: #0cb8b6;">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com" style="color: #0cb8b6;">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <?php 
+                    if(isset($data['DoctorList'])) {
+                        for ($i=0; $i<3; $i++) {
+                            echo '<div class="card-item">
+                                        <div class="info-of-card">
+                                            <img src="public/images/doctors/'.$data['DoctorList'][$i]['Image'].'">
+                                            <div class="name">'.$data['DoctorList'][$i]['FullName'].'</div>
+                                            <div class="describe">Elizabeth Folk, M.D is a highly <br> compassionate physician.</div>
+                                            <div class="social-icons">
+                                                <a href="https://www.facebook.com" style="color: #0cb8b6;">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="https://www.instagram.com" style="color: #0cb8b6;">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a href="https://twitter.com" style="color: #0cb8b6;">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>';
+                        }
+                    }
+                ?>
             </div>
         </div>
     </div>

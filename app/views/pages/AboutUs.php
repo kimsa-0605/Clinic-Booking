@@ -16,6 +16,10 @@
 </head>
 
 <body>
+    <?php 
+        $pageName = "Contact Us";
+        include("app/views/components/slider.php"); 
+    ?>
     <section class="section-1">
         <div class="container">
             <div class="title-section-1">

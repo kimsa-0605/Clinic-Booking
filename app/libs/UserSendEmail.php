@@ -10,27 +10,17 @@
     class UserSendEmail {
         function __construct() {}
 
-        function SendEmail($email, $name, $message, $subject) {
-        
-            require "vendor/autoload.php";
-            $mail = new PHPMailer();
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP host
-            $mail->Port = 587; // Replace with your SMTP port
-            $mail->SMTPAuth = true;
-            $mail->Username = "holykimsa05@gmail.com";
-            $mail->Password = "ocfo jdqr ujsu wzqs";
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        function SendEmail( $name, $message, $subject) {
+            $subject_encoded = urlencode("[Contact Us] $subject - From $name");
+            $message_encoded = urlencode($message);
 
-            $mail->CharSet = 'UTF-8';
-            $mail->setFrom("holykimsa05@gmail.com", "ClinicExtra");
-            $mail->addAddress("holykimsa05@gmail.com", "ClinicExtra");
-            $mail->addReplyTo($email, $name);
+            // Tạo URL cho Gmail
+            $url = "https://mail.google.com/mail/u/0/?fs=1&to=holykimsa05@gmail.com&su=$subject_encoded&body=$message_encoded&tf=cm";
 
-            $mail->Subject = "[Contact Us] $subject - From $name";
-            $mail->Body = $message;
-
-            $mail->send();
+            // Chuyển hướng người dùng đến URL
+            header("Location: $url");
+            exit();
+            
         }        
     }
 ?>
