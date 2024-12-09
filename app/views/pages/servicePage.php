@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <base href="/Clinic-Booking/">
+    <base href="/PHP_CLINIC/Clinic-Booking/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Service Css -->
     <link rel="stylesheet" href="public/css/Service.css">
