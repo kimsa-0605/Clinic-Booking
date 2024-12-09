@@ -183,19 +183,31 @@
     cursor: pointer;
 }
 
-.book-slot_timevalue.active,
-.book-slots-day-item.active{
-    background-color: #00bfbf;
-    color: white; 
+/* CSS for isBooked TimeType */
+.book-slot_isBooked, .book-slot_timevalue {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #00174f;
+    font-size: 14px;
+    width: auto;
+    color: #958d8d;
+    cursor: not-allowed;
+    text-align: center;
 }
 
-/* CSS for isBooked TimeType */
-.book-slot_isBooked {
-    background-color: #00174f;
-    color: #958d8d;
-    pointer-events: none;
-    position: relative;
+.book-slot_timevalue {
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #00174f;
+    cursor: pointer;
 }
+
 /* Css for book-slots-day */
 .book-slots-day { 
     display: flex;
@@ -220,8 +232,26 @@
     height: 100px;
     border-radius: 30px;
     cursor: pointer;
+    color: #00174f;
 }
 
+.book-slots-day-item.locked {
+    background-color: #00174f;
+    cursor: not-allowed;
+    border-color: #958d8d;
+    color: #958d8d;
+}
+
+#result {
+    display: flex;
+    margin-left: -370px;
+    overflow-x: auto;
+}
+
+#result::-webkit-scrollbar {
+    display: none;
+}
+/* CSS for modal */
 /* CSS for Button */
 .btn {
     outline: 0;

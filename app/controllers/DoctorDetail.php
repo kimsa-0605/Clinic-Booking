@@ -8,6 +8,7 @@
             $timevalue = $model->getTimeValue($id);
             $isBooked = $model->getIsBooked($id);
             $day = $model->getDays();
+            $slot = $model->getSlots($id);
             $daySchedule = $model->getDayOfSchedule($id);
             $this->view('master', [
                 'Page' => 'DoctorDetail',
@@ -16,8 +17,23 @@
                 'TimeValue' => $timevalue,
                 'isBooked' => $isBooked,
                 'days' => $day,
-                'dayofschedule' => $daySchedule
+                'dayofschedule' => $daySchedule,
+                'slots' => $slot,
+                'id' => $id
             ]);
+        }
+
+        public function payment($id) {
+            $feesModel = $this->model('DoctorModel');
+            $fees = $feesModel->getFees($id);
+            $this->view('payment',
+            ['Fees'=>$fees
+            ]);
+        }
+        public function success() {
+            $success = $this->model('DoctorModel');
+            $this->view('master',
+            ['Page' => 'allDoctor']);
         }
     }
 ?>

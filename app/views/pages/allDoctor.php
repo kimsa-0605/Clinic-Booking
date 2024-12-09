@@ -48,7 +48,6 @@
                         <?php
                             echo '<a href="DoctorDetail/show/'.$doctor['DoctorID'].'">';                            
                             echo '<img src="public/images/' . $doctor['Image'] . '" alt="" class=doctor-image">';
-                            echo '<div class="doctor-avb">' . $doctor['Image'] . '</div>';
                             echo '<div class="doctor-name">' . $doctor['FullName'] . '</div>';
                             echo '<div class="doctor-specility">' . $doctor['SPName'] . '</div>';
                             echo '</a>';

@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <base href="/Clinic-Booking/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <base href="/PHP_CLINIC/Clinic-Booking/">
     <link rel="stylesheet" href="public/css/Home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" id="google-font-quicksand-css" href="https://fonts.googleapis.com/css?family=Quicksand%3A300%2C400%2C700&amp;ver=6.7.1&amp;display=swap" media="all">
