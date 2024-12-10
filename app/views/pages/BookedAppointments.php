@@ -36,7 +36,7 @@
                                                 <th>Specialty</th>
                                                 <th>Date</th>
                                                 <th>Time</th>
-                                                <th>Status</th>
+                                                <th>Appointmnet Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>';

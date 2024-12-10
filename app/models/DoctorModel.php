@@ -225,15 +225,21 @@ use Stripe\Billing\Alert;
         
         public function createAppointment() {
             $con = $this->con;
+            if(!isset($_SESSION['appointmentData'])) {
+                return false;
+            }
             
             // Lấy dữ liệu từ session
-            $time = $_SESSION['appointmentData']['idSlot'];
-            $doctorID = $_SESSION['appointmentData']['doctorId'];
-            $des = $_SESSION['appointmentData']['description'];
+            $time = $_SESSION['appointmentData']['idSlot'] ?? '';
+            $doctorID = $_SESSION['appointmentData']['doctorId'] ?? '';
+            $des = $_SESSION['appointmentData']['description'] ?? '';
             // Lấy từ SESSION
-            $userID = $_SESSION['id-user'] ?? 31;
+            $userID = $_SESSION['id-user'];
             
             // Format thời gian
+            if(!$time) {
+                return false;
+            }
             $formattedTime = DateTime::createFromFormat('g:i A', $time)->format('h:i A');        
             // Tìm TTID từ bảng TimeType
             $sqlTime = "SELECT TTID FROM TimeType WHERE TimeValue = ?";

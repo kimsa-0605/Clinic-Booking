@@ -17,7 +17,7 @@
 
 <body>
     <?php 
-        $pageName = "Contact Us";
+        $pageName = "About Us";
         include("app/views/components/slider.php"); 
     ?>
     <section class="section-1">

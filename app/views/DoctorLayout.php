@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <base href="/Clinic-Booking/">
+    <base href="/PHP_CLINIC/Clinic-Booking/">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="public/css/DoctorLayout.css"> <!-- Đảm bảo đường dẫn đúng -->
+    <link rel="stylesheet" href="/PHP_CLINIC/Clinic-Booking/public/css/DoctorLayout.css"> <!-- Đảm bảo đường dẫn đúng -->
 </head>
 
 <body>
     <div class="contain">
         <div id="nav-bar">
             <div class="nav-logo">
-                <img id="logo" src="public/images/logo.png" alt="">
+                <img id="logo" src="/PHP_CLINIC/Clinic-Booking/public/images/logo.png" alt="">
                 <button class="menu-bar"><i class="fa-solid fa-bars icon-menubar"></i></button>
             </div>
             <div class="nav-menu">
