@@ -229,7 +229,7 @@
                         for ($i=0; $i<3; $i++) {
                             echo '<div class="card-item">
                                         <div class="info-of-card">
-                                            <img src="public/images/doctors/'.$data['DoctorList'][$i]['Image'].'">
+                                            <img src="public/images/'.$data['DoctorList'][$i]['Image'].'">
                                             <div class="name">'.$data['DoctorList'][$i]['FullName'].'</div>
                                             <div class="describe">Elizabeth Folk, M.D is a highly <br> compassionate physician.</div>
                                             <div class="social-icons">

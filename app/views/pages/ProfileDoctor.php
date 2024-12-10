@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <base href="/Clinic-Booking/">
+    <base href="/PHP_CLINIC/Clinic-Booking/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="public/css/DoctorDashboard.css"> <!-- Đường dẫn đến CSS -->
+    <link rel="stylesheet" href="/PHP_CLINIC/Clinic-Booking/public/css/DoctorDashboard.css"> <!-- Đường dẫn đến CSS -->
 </head>
 
 <body>
@@ -16,11 +16,11 @@
         <div class="header">
             <div class="dashboard">Profile</div>
             <div class="infor">
-                <div class="notice">
+                <!-- <div class="notice">
                     <i class="fa-solid fa-bell icon-notice"></i>
                     <div class="number-notice">2</div>
-                </div>
-                <img src="public/images/doctors/Andy.jpg" alt=""> <!-- Đường dẫn đến hình ảnh -->
+                </div> -->
+                <img src="/PHP_CLINIC/Clinic-Booking/public/images/doctors/Andy.jpg" alt=""> <!-- Đường dẫn đến hình ảnh -->
                 <p><?php echo htmlspecialchars($data['Doctor']['FullName']); ?></p>
             </div>
         </div>
