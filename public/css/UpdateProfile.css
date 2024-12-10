@@ -1,0 +1,126 @@
+
+.content-profile {
+    padding: 60px;
+}
+
+.content-body-profile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.form-infor-update-change-UDP {
+    display: flex;
+    width: 200%;
+    gap: 30px;
+}
+
+.body-content-profile {
+    display: flex;
+    gap: 40px;
+}
+
+.infor-form-UDP, .password-form-UDP {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: #1d2d5e;
+}
+
+.text-title-infor-form-UDP, .text-title-password-form-UDP {
+    font-size: 20px;
+    color: #1d2d5e;
+    font-weight: bold;
+}
+
+.text-title-infor-form-UDP span, .text-title-password-form-UDP span {
+    color: #0cb8b6;
+}
+
+.radio-input-gender-UDP {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-info {
+    background-color: #1d2d5e !important;
+    color: white !important;
+    font-size: 14px !important;
+}
+
+.avata-user {
+    position: relative;
+    width: 200%;
+    padding: 30px;
+    background-image: linear-gradient(to right, #1d2d5e, #0cb8b6);
+    border-radius: 20px;
+}
+
+.avata-user img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#file-upload {
+    display: none !important;
+}
+
+.custom-file-upload, .submitChangeImage {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    right: 250px;
+    bottom: 30px;
+    height: 40px;
+    width: 150px;
+    background-color: #1d2d5e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0px;
+}
+
+.submitChangeImage {
+    position: absolute;
+    right: 50px;
+}   
+.popover {
+    background-color: red !important; /* Nền đỏ */
+    border: none; /* Bỏ viền */
+}
+
+.input-error {
+    border: 2px solid red; /* Viền đỏ */
+    background-color: #ffe6e6; /* Nền nhạt đỏ */
+}
+
+/* Tùy chỉnh mũi tên của popover */
+.popover.bs-popover-start .popover-body::before,
+.popover.bs-popover-start .popover-body::after {
+    border-left-color: red !important;
+}
+
+/* Tùy chỉnh kích thước mũi tên */
+.popover .popover-arrow {
+    width: 0.7rem; /* Tăng kích thước mũi tên */
+    height: 0.7rem;
+}
+
+/* Tùy chỉnh nội dung của popover */
+.popover .popover-body {
+    padding: 8px 12px; /* Tăng padding */
+    font-size: 14px; /* Cỡ chữ */
+    font-weight: bold; /* In đậm chữ */
+    color: white !important; /* Chữ trắng */
+    text-align: center;
+    background-color: red;
+}
+

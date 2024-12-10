@@ -1,0 +1,67 @@
+.content-MH {
+    padding: 60px;
+}
+
+.body-content-MH {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.table-display-MH {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.tbl-content-MH {
+    min-width: 1150px;
+    min-height: 244px !important;
+    height: 244px;
+    width: 100%;
+}
+
+.tbl-MH th {
+    color: #1d2d5e ;
+}
+
+.tbl-MH td {
+    color: rgba(0, 0, 0, 0.627);
+}
+
+.nondata {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.nondata i {
+    font-size: 30px;
+}
+
+.pagination .page-item.active .page-link {
+    Background-color: #1d2d5e; /* Màu nền khi nút được chọn */
+    color: white;             /* Màu chữ */
+    border-color: #1d2d5e;    /* Màu viền */
+}
+
+.pagination .page-link {
+    color: #1d2d5e;           /* Màu chữ cho các nút thông thường */
+}
+
+.pagination .page-link:hover {
+    background-color: #f0f0f0; /* Màu nền khi di chuột */
+    color: #1d2d5e;           /* Màu chữ khi di chuột */
+}
+
+.tbl-title-MH {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2d5e;   
+}
+
+.tbl-title-MH span{
+    color: #0cb8b6;   
+}

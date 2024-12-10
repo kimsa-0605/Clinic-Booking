@@ -1,0 +1,40 @@
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    /* gap: px; */
+}
+
+div.card.card-body-sidebar {
+    width: 220px;
+}
+
+.overview-sidebar, .btn-primary, .update-account-sidebar, .logout-account-sidebar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    gap: 5px;
+    border: none !important;
+    background-color: white !important;
+    width: 220px;
+    height: 50px;
+    border-radius: 20px !important;
+    margin-bottom: 20px;
+    color: #1d2d5e!important;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.BA-sidebar, .MH-sidebar {
+    border: none;
+    background-color: white;
+    color: #1d2d5e!important;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none !important;
+}

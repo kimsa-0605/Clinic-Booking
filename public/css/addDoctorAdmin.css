@@ -1,0 +1,144 @@
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-AD {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    background-color: azure;
+}
+
+.icon-back {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    color: #1d2d5e;
+}
+
+.icon-back button, .icon-back button:focus {
+    border: none;
+    background-color: azure;
+    outline: none;
+}
+
+.body-content-AD {
+    display: flex;
+    width: 1000px;
+    border-radius: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bd-form-AD {
+    padding: 20px;
+    width: 100%;
+    height: 550px;
+    background-color: #1d2d5e;
+    border-radius: 30px;
+}
+.bd-form-content-AD {
+    width: 100%;
+    height: 70%;
+    padding: 0px 60px;
+}
+
+.form-content-AD {
+    height: 100%;
+}
+.text-title-form-AD {
+    font-size: 36px;
+    font-weight: 600;
+    color: #0cb8b6;
+    margin: 20px 0px;
+}
+
+.text-title-form-AD span {
+    color: white;
+}
+
+.input-content-AD {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.logo-AD img {
+    width: 120px;
+    background-color: azure;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputInforDoctor {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputInforDoctor .form-group {
+    width: 450px;
+}
+
+.input-error {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+/* Tùy chỉnh nền popover */
+.popover {
+    background-color: red !important; /* Nền đỏ */
+    border: none; /* Bỏ viền */
+}
+
+/* Tùy chỉnh mũi tên của popover */
+.popover.bs-popover-left .popover-arrow::before,
+.popover.bs-popover-left .popover-arrow::after {
+    border-left-color: red !important; /* Mũi tên màu đỏ */
+}
+
+/* Tùy chỉnh kích thước mũi tên */
+.popover .popover-arrow {
+    width: 0.7rem; /* Tăng kích thước mũi tên */
+    height: 0.7rem;
+}
+
+/* Tùy chỉnh nội dung của popover */
+.popover .popover-body {
+    padding: 8px 12px; /* Tăng padding */
+    font-size: 14px; /* Cỡ chữ */
+    font-weight: bold; /* In đậm chữ */
+    color: white !important; /* Chữ trắng */
+    text-align: center;
+}
+
+.form-group input, .form-group select {
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+.form-group select {
+    padding-right: 20px;
+}
+
+.btn-info {
+    border-radius: 50px !important;
+    padding: 8px 20px !important;
+}
+
+.nav-user-LI {
+    padding-left: 5px;
+    color: white;
+}
+
+.nav-user-LI a {
+    color: #0cb8b6;
+}

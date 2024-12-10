@@ -1,0 +1,148 @@
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-SI {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    background-color: azure;
+}
+
+.icon-back {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    color: #1d2d5e;
+}
+
+.icon-back button, .icon-back button:focus {
+    border: none;
+    background-color: azure;
+    outline: none;
+}
+
+.body-content-SI {
+    display: flex;
+    width: 1000px;
+    border-radius: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bd-form-SI {
+    padding: 20px;
+    width: 100%;
+    height: 550px;
+    background-color: #1d2d5e;
+    border-top-right-radius: 4%;
+    border-bottom-right-radius: 4%;
+}
+
+.bd-form-content-SI {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-content-SI {
+    height: 100%;
+}
+
+.text-title-form-SI {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0cb8b6;
+    margin: 20px 0px;
+}
+
+.text-title-form-SI span {
+    color: white;
+}
+
+.input-content-SI {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+
+.input-error {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+/* Tùy chỉnh nền popover */
+.popover {
+    background-color: red !important; /* Nền đỏ */
+    border: none; /* Bỏ viền */
+}
+
+/* Tùy chỉnh mũi tên của popover */
+.popover.bs-popover-left .popover-arrow::before,
+.popover.bs-popover-left .popover-arrow::after {
+    border-left-color: red !important; /* Mũi tên màu đỏ */
+}
+
+/* Tùy chỉnh kích thước mũi tên */
+.popover .popover-arrow {
+    width: 0.7rem; /* Tăng kích thước mũi tên */
+    height: 0.7rem;
+}
+
+/* Tùy chỉnh nội dung của popover */
+.popover .popover-body {
+    padding: 8px 12px; /* Tăng padding */
+    font-size: 14px; /* Cỡ chữ */
+    font-weight: bold; /* In đậm chữ */
+    color: white !important; /* Chữ trắng */
+    text-align: center;
+}   
+
+.logo-SI img {
+    width: 120px;
+    background-color: azure;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.bd-image-SI img {
+    width: 480px;
+    height: 550px;
+    padding: 20px;
+}
+
+.inputPassword {
+    gap: 20px;
+}
+
+.form-group input {
+    padding-left: 20px;
+    border-radius: 50px;
+    width: 449.8px;
+}
+
+.btn-info {
+    border-radius: 50px !important;
+    padding: 8px 20px !important;
+    width: 98px;
+}
+
+.nav-user-SU {
+    padding-left: 5px;
+    color: white;
+}
+
+.nav-user-SU a {
+    color: #0cb8b6;
+}
